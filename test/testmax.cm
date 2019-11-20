@@ -1,0 +1,53 @@
+int arr[4];
+
+int getinput(void) {
+	int in;
+	write "Enter a number";
+	read in;
+	write in;
+	return in;
+}
+
+void writearr(void) {
+	int i;
+	i = 0;
+	while (i < 4) {
+		write arr[i];
+		i = i + 1;
+	}
+}
+
+void insert(int value, int index) {
+	if (index > 3)
+		write "That's too many!";
+	else
+		arr[index] = value;
+}
+
+int getmax(void) {
+	int max;
+	int i;
+	max = arr[0];
+	i = 0;
+	while (i < 4) {
+		if (arr[i] > max)
+			max = arr[i];
+		i = i + 1;
+	}
+	return max;
+}
+
+void main(void) {
+	int i;
+	int m;
+	i = 0;
+	while (i < 5) {
+		insert(getinput(),i);
+		i = i + 1;
+	}
+	write "Comparing these numbers:";
+	writearr();
+	m = getmax();
+	write "The maximum is";
+	write m;
+}

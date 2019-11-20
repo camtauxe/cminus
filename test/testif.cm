@@ -1,0 +1,16 @@
+int x;
+
+void main(void) {
+	x = 1;
+	if (x) {
+		x = 2;
+		write x;
+	}
+	if (x == 1)
+		write "this won't happen";
+	else {
+		int y;
+		y = 3;
+		write y+x;
+	}
+}

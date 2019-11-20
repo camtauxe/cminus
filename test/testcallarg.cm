@@ -1,0 +1,11 @@
+int minus3(int in) {
+    return in-3;
+}
+
+int adder(int x, int y) {
+    return x + y;
+}
+
+void main(void) {
+    write adder(adder(1,minus3(4)),minus3(5));
+}

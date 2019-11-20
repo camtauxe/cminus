@@ -1,0 +1,4 @@
+void main(void) {
+	write "Hello World!";
+	write "This is writing a string...";
+}

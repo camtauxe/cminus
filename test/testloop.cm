@@ -1,0 +1,11 @@
+int i;
+
+void main(void) {
+	i = 0;
+	while (i < 10) {
+		int next;
+		next = i+1;
+		write next;
+		i = next;
+	}
+}

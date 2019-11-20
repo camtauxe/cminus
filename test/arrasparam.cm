@@ -1,0 +1,9 @@
+int x[100];
+
+int f(int z) {
+	return;
+}
+
+void main(void) {
+	x = 1;
+}

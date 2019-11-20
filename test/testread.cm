@@ -1,0 +1,8 @@
+int x;
+
+void main(void) {
+	int y[3];
+	read x;
+	read y[1];
+	write x + y[1];
+}

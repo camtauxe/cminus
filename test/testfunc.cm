@@ -1,0 +1,16 @@
+int x;
+
+void f(int x, int y, int z) {
+	write x;
+	write y;
+	write z;
+}
+
+int twice(int input) {
+	return input*2;
+}
+
+void main(void) {
+	f(1,2,3);
+	write twice(4);
+}
